@@ -412,7 +412,7 @@ limitations under the License.
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
   </gazebo>
 
- <!--  <gazebo>
+  <gazebo>
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
       <alwaysOn>true</alwaysOn>
       <updateRate>100</updateRate>
@@ -426,7 +426,7 @@ limitations under the License.
       <odometryFrame>odom</odometryFrame>
       <robotBaseFrame>base_link</robotBaseFrame>
     </plugin>
-  </gazebo> -->
+  </gazebo>
   
   <joint name="hokuyo_joint" type="fixed">
     <axis xyz="0 1 0" />
