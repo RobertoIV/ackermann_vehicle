@@ -11,10 +11,13 @@ So I tried to install it using ros-indigo-ackermann-vehicle
 again it does not install some files like urdf and ...
 I tried to use ros-indigo-ackermann-vehicle* which fixed my errors.
 
+sudo apt-get install ros-indigo-fake-localization
+
+
 
 Move the robot in terminal
 ________________________
-after running the: roslaunch ackermann_vehicle_gazebo ackermann_vehicle.launch
+after running the: roslaunch ackermann_vehicle_gazebo ackermann_vehicle_.launch
 you can try to publisg the "ackermann_vehicle/ackermann_cmd" to move the robot in gazebo:
 
 rostopic pub -r 10 ackermann_vehicle/ackermann_cmd ackermann_msgs/AckermannDriveStamped '{header: auto, drive: [1,0,1,0,0]}

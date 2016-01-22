@@ -37,7 +37,6 @@ limitations under the License.
     <param name="use_gui" value="true"/>
   </node>
 
-  <include file="$(find ackermann_vehicle_description)/launch/rviz.launch">
-    <arg name="namespace" value="$(arg namespace)"/>
-  </include>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ackermann_vehicle_description)/visual.rviz" />
+
 </launch>
