@@ -38,7 +38,7 @@ limitations under the License.
 <launch>
   <arg name="namespace" default="ackermann_vehicle"/>
   <!--arg name="world_name" default="worlds/empty.world"/-->
-  <arg name="world_name" default="$(find ackermann_vehicle_gazebo)/worlds/road.world"/>
+  <arg name="world_name" default="$(find ackermann_vehicle_gazebo)/worlds/obstacle.world"/>
   <arg name="cmd_timeout" default="0.5"/>
 
   <!-- Vehicle pose -->
